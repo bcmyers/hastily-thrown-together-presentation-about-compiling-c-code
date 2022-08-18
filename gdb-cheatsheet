@@ -1,0 +1,12 @@
+just run-gdb
+b main.c:14
+b main.c:15
+r
+disas main
+disas 'puts@plt'
+p/x *(void **)0x404018
+c
+p/x *(void **)0x404018
+disas (void **)0x7fbe10f9fed0
+
+# look for <_IO_puts>
